@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Inicio </title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="#">
+		    	<img src="https://w7.pngwing.com/pngs/627/683/png-transparent-cardboard-box-packaging-and-labeling-package-delivery-packaging-miscellaneous-cardboard-warehouse.png" class="img-fluid" width="50">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="inicio.html">Dashboard</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="produtos.html">Produtos</a>
+		        </li>
+		        
+		        <li class="nav-item">
+		          <a class="nav-link" href="clientes.html">Clientes</a>
+		        </li>
+
+		        <li class="nav-item">
+		          <a class="nav-link" href="venda.html">Venda</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="index.html">Sair</a>
+		        </li>		        
+		      </ul>
+		      <form class="d-flex" role="search">
+		        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+
+		<div class="container-fluid">
+			
+			<div class="row">
+				<div class="col-12">					
+
+					<div class="card">
+					  <div class="card-header bg-success">
+					     
+					    Lista de Clientes
+					  </div>
+					  <ul class="list-group list-group-flush">
+					    <li class="list-group-item"><a href="novoCliente.html" class="btn btn-outline-success"> <span class="iconify" data-icon="line-md:plus-square-twotone"></span> Novo Cliente </a></li>
+					  </ul>
+
+					  <div class="card-body">
+						  <table class="table table-hover table-striped table-bordered" id="myTable">
+						  	<thead class="text-center table-success">
+						  		<th> Nome </th>
+						  		<th> CPF </th>
+						  		<th> Endereço </th>
+						  		<th> Data de Nasc. </th>
+						  		<th> Email </th>
+						  		<th> Ações </th>
+						  	</thead>
+						  	<tbody>
+						  		<tr>
+						  			<td> Anthony Jefferson </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+
+						  		<tr>
+						  			<td> Maria das Quantas </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Jose Felicio </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Pedro Alencar </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Moises Lucarelli </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Anthony Gabriel </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Levi Fidelix </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Jhonson Ignacio </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Joana Darc </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Mariana das Quantas </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Pedrosa Nascimento </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+						  		<tr>
+						  			<td> Luizim de Irauçuba </td>
+						  			<td> 123456123-56 </td>
+						  			<td> Rua Bem Alí, 222 </td>
+						  			<td> 04/12/1993 </td>
+						  			<td> anthony@email.com </td>
+						  			<td> 
+						  				<button title="Editar" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:pencil-bold"></span>
+						  				</button>
+						  				<button title="Excluir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="ph:trash-bold"></span>
+						  				</button>
+						  				<button title="Imprimir" class="btn btn-sm btn-secondary">
+						  					<span class="iconify" data-icon="solar:printer-bold"></span>
+						  				</button>
+						  			</td>
+						  		</tr>
+
+						  		
+
+						  	</tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#myTable').DataTable();
+			});
+		</script>
+
+	</body>
+</html>
