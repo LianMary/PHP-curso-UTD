@@ -1,0 +1,24 @@
+/*******************
+ Breadcrumb and page title
+*******************/
+
+.page-breadcrumb {
+  padding: 20px 20px 0 20px;
+  .page-title {
+    margin-bottom: 0px;
+    font-weight: $font-weight-medium;
+    font-size: 21px;
+  }
+  .breadcrumb {
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+    font-size: 12px;
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "\F142";
+      font: normal normal normal 24px/1 "Material Design Icons";
+      font-size: inherit;
+      color: $gray-400;
+    }
+  }
+}
