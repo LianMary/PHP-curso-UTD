@@ -4,7 +4,7 @@
 
     if(isset($_SESSION[sha1("user_data")])){
         $dadosUsuario = $_SESSION[sha1("user_data")];
-        //var_dump($dadosUsuario);
+        var_dump($dadosUsuario);
         header("location: sistema.php");
     }
 
