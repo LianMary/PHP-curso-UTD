@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de contato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body> 
+  <!--Cria uma barra de navegação que permite ir para varias páginas diferentes-->
+  <nav class="navbar navbar-expand-lg" style="background-color: #63CCC0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Starcode <img src="" alt=""> 
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../questao4/index.html">Home</a> <!--Liga no forme de login de verificação-->
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="../questao2/estoque.html">Estoque</a> <!--Ligação com a questão 02- tabela de -->
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="../questao3/notas.html">Notas da autora</a> <!--Liga com a página com divisorias-->
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="contato.html">Formulario de contato  </a>
+          </li>
+
+        </ul>
+        <span class="navbar-text">
+          Melhor lugar para reclamar!
+        </span>
+      </div>
+    </div>
+  </nav><br><br>
+  
+  <center>
+    <div>
+        <h1>Formulário de contato e reclamações</h1>
+        <p>Para entrar em contato com nossa desenvolvedora, por favor cadastre-se. Conte sua opinião, critica construtiva ou relato.</p>
+    </div> <br>
+  </center>
+
+  <div class="container" border="2px" >
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header bg-primary-subtle">
+            Formuário de contato 
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="formGroupContatoInput" placeholder="Digite seu nome">
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="mb-3">
+                  <label for="formGroupSobrenomeInput2" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="formGrouSobrenomeInput2" placeholder="Digite seu sobrenome">
+                </div>
+              </div>
+
+              <div class="col-6 mt-2">
+                 <div class="mb-3"><!-- Caixa pra por o email-->
+                  <label for="formGroupEmailInput3" class="form-label">Email de contato</label>
+                  <input type="email" class="form-control" id="formGroupEmailInput3" placeholder="Another input placeholder">
+                  </div>
+                </div>
+                <!-- caixa para por Telefone  -->
+              <div class="col-6 mt-2">
+                <div class="mb-3">  <label for="exampleFormControlInput1" class="form-label">Telefone </label>
+                  <input type="text" class="form-control telefone" id="exampleFormControlInput1" placeholder1="Nome do Produto">
+                </div>
+              </div>
+
+                <div class="col-12 mt-3">
+                  <div class="form-floating">
+                   <!-- Caixa de texto-->
+                    <textarea class="form-control" placeholder="Deixe seu comentário,sugestão ou reclamação " id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2"> Diga sua opinião </label>
+                  </div>
+                </div>
+                <div>
+                  <br>
+                  <!--Botão de enviar os dados (Ainda não funciona )-->
+                  <button type="submit" class="btn btn-primary"> Enviar </button>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Js que verifica o número de celular e deixa ele bonitinho-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js"></script>
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$('.telefone').mask('(00) 0000-0000');;
+			});
+		</script>
+</body>
+</html>
