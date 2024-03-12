@@ -12,12 +12,12 @@
         </div>
         <div class="card-body">
             <!-- Conteúdo real da página -->
-            <form action="<?= $GLOBALS['urlBase']; ?>/modules/users/users.php" method="POST" class="form-horizontal mt-4" enctype="multipart/form-data">
+            <form action="<?= $GLOBALS['urlBase']; ?>/modules/users/people.php" method="POST" class="form-horizontal mt-4" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="wpf:name" style="color: #198754;"></span> Nome Completo </label>
-                            <input name="fullName" type="text" class="form-control" id="exampleFormControlInput1" placeholder1="Nome do Cliente">
+                            <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="wpf:name" style="color: #198754;"></span> Nome </label>
+                            <input name="fullName" type="text" class="form-control" id="exampleFormControlInput1" placeholder1="Nome da Pessoa">
                         </div>
 
                     </div>
@@ -25,38 +25,21 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="ic:twotone-email" style="color: #198754;"></span> Email </label>
-                            <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder1="Nome do Produto">
+                            <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder1="exemplo@gmail.com">
                         </div>
                     </div>
-
-                    <div class="col-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="fa6-solid:key" style="color: #198754;"></span> Senha </label>
-                            <input name="password" type="password" class="form-control" id="exampleFormControlInput1" placeholder1="Nome do Produto">
-                        </div>
-                    </div>
-
-
-                    <div class="col-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="fa6-solid:address-card" style="color: #198754;"></span> CPF </label>
-                            <input name="document" type="text" class="form-control cpf" id="exampleFormControlInput1" placeholder1="Nome do Produto">
-                        </div>
-                    </div>
-
-
 
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="ph:phone-fill" style="color: #198754;"></span> Contato </label>
-                            <input name="phone" type="text" class="form-control telefone" id="exampleFormControlInput1" placeholder1="Nome do Produto">
+                            <input name="phone" type="text" class="form-control telefone" id="exampleFormControlInput1" placeholder1="Nome do contato">
                         </div>
                     </div>
 
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label"><span class="iconify" data-icon="fa6-solid:image" style="color: #198754;"></span> Foto de Perfil </label>
-                            <input id="file_upload" name="file" type="file" class="form-control" id="exampleFormControlInput1" placeholder1="Nome do Produto" accept="image/*" onblur="validate2();">
+                            <input id="file_upload" name="file" type="file" class="form-control" id="exampleFormControlInput1" placeholder1="Nome do Produto colaborativo" accept="image/*" onblur="validate2();">
                         </div>
                     </div>
 
@@ -84,13 +67,5 @@
             document.getElementById('file_upload').value='';
             return false;
         }
-        
-        // var type = 'image/*';
-        // var file_type = document.getElementB--yId('file_upload').files[0].type;
-        // if (file_type != type) {
-        //     alert('Format not supported,Only .jpeg images are accepted');
-        //     document.getElementById('file_upload').value='';
-        //     return false;
-        // }
     }
 </script>
