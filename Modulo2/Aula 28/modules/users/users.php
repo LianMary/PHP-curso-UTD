@@ -11,7 +11,8 @@
             
             
             
-            # Removendo o elemento do array
+            # Removendo o elemento do array 
+            #Comentario da aluna: Essa verificação vai mandar as fotos e arquivos para outro lugar!
             unset($_POST['action']);
 
             if($_FILES['file']['name'] != ""){
@@ -23,6 +24,7 @@
                 }
                 move_uploaded_file($_FILES['file']['tmp_name'], $pathBase."/uploads/users/profile-pictures/$newFile");
             }
+            # Comentario da aluna: Fim da verificação
 
             $_POST['password'] = sha1($_POST['password']);
 
